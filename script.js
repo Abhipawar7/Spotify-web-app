@@ -37,24 +37,34 @@ async function getSongs(folder) {            //async func to fetch .mp3 files
     let songUL = document.querySelector('.songlist').getElementsByTagName("ul")[0]  //find ul from songlist container
     songUL.innerHTML = ""
     for (const song of songs) {       //loop through songs array
-        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" src="img/music.svg" alt="">
+        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" src="images/music.svg" alt="">
                             <div class="info">
                                 <div> ${song.replaceAll("%20", " ")}</div>
                                 <div> </div>
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
-                                <img src="img/play.svg" alt="">
+                                <img src="images/play.svg" alt="">
                             </div></li>`;
 
     }
     //adding event listner for each song
 
     Array.from(document.querySelector('.songlist').getElementsByTagName("li")).forEach(e => {    //convert html data to real array to perform foreach
-        e.addEventListener("click",element =>{
-             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())         //get the info div's first child element which is song name and .trim uses to get clear name
+        e.addEventListener("click", element => {
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())         //get the info div's first child element which is song name and .trim uses to get clear name
         })
     })
     return songs
 
+}
+// function to play music
+const playMusic = (track, pause = false) => {            //default flag as false so if song loads it will not played until user clicks
+    currentSong.src = `/${currFolder}/` + track
+    if (!pause) {
+        currentSong.play()                           //if song is playing change icon to pause
+        play.src = "images/pause.svg"
+    }
+    document.querySelector(".songinfo").innerHTML = decodeURI(track)    //update ui to show current track name 
+    document.querySelector(".songtime").innerHTML = "00:00/00.00"         //reset time display [start/end]
 }
