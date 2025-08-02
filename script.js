@@ -32,4 +32,29 @@ async function getSongs(folder) {            //async func to fetch .mp3 files
             songs.push(element.href.split(`/${folder}/`)[1])       //split full name ,just exctract file name and push to array
         }
     }
+    // function to show all songs in playlist
+
+    let songUL = document.querySelector('.songlist').getElementsByTagName("ul")[0]  //find ul from songlist container
+    songUL.innerHTML = ""
+    for (const song of songs) {       //loop through songs array
+        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" src="img/music.svg" alt="">
+                            <div class="info">
+                                <div> ${song.replaceAll("%20", " ")}</div>
+                                <div> </div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img src="img/play.svg" alt="">
+                            </div></li>`;
+
+    }
+    //adding event listner for each song
+
+    Array.from(document.querySelector('.songlist').getElementsByTagName("li")).forEach(e => {    //convert html data to real array to perform foreach
+        e.addEventListener("click",element =>{
+             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())         //get the info div's first child element which is song name and .trim uses to get clear name
+        })
+    })
+    return songs
+
 }
