@@ -68,3 +68,47 @@ const playMusic = (track, pause = false) => {            //default flag as false
     document.querySelector(".songinfo").innerHTML = decodeURI(track)    //update ui to show current track name 
     document.querySelector(".songtime").innerHTML = "00:00/00.00"         //reset time display [start/end]
 }
+//Function to display albums
+async function displayAlbums() {
+    console.log("displaying albums")
+    let a = await fetch(`/songs/`)                    //send request to songs folder to fetch song albums
+    let response = await a.text();                     //get html response
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let anchors = div.getElementsByTagName("a")             //get all a tags from response
+    let cardContainer = document.querySelector(".card-container")
+    let array = Array.from(anchors)                           //convert links into array for easier looping
+    for (let index = 0; index < array.length; index++) {
+        const e = array[index];
+        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
+            let folder = e.href.split("/").slice(-2)[0];
+            //get metadata of folder
+
+            let a = await fetch(`/songs/${folder}/info.json`)         //load info.json from folder
+            let response = await a.json();
+            cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card ">
+            <div class="play">
+                <svg width="16" height="16" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5"
+                        stroke-line-joined="round" />
+                </svg>
+
+            </div>
+            <img src="songs/${folder}/cover.jpg"
+                alt="">
+
+            <h2>${response.title}</h2>
+            <p>${response.description}</p>
+        </div>`
+        }
+    }
+    //adding click functionality to each card 
+     Array.from(document.getElementsByClassName("card")).forEach(e => {
+        e.addEventListener("click", async item => {
+            console.log("fetching songs")                  // debug log
+            songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  //fetch songs from clicked album
+            playMusic(songs[0])
+        })
+    })
+}
