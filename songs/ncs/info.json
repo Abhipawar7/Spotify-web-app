@@ -1,6 +1,11 @@
 {
-   "title" :"sleep songs",
-   "description" :"songs for you"
-   
-
+    "title": "NCS Hits",
+    "description": "Best copyright-free music by NCS",
+    "cover": "cover.jpg",
+    "tracks": [
+        { "title": "Song One", "file": "BEKSY.-Stars in the sky [NCS Release].mp3" },
+        { "title": "Song One", "file": "Egzod-Royalty.mp3" },
+        { "title": "Song One", "file": "Netrum - Always Be[NCS Release].mp3" },
+        { "title": "Song Two", "file": "Warriyo - Mortals.mp3" }
+    ]
 }

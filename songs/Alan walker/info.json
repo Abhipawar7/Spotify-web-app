@@ -1,4 +1,11 @@
 {
-    "title" : "Alan Walker",
-    "description" : "Feel Nostalgia"
+    "title": "Alan Walker",
+    "description": "Best copyright-free music by Alan Walker",
+    "cover": "cover.jpg",
+    "tracks": [
+        { "title": "Song One", "file": "Darkside.mp3" },
+        { "title": "Song Two", "file": "Diamond-Heart_.mp3" },
+        { "title": "Song Two", "file": "Faded_320.mp3" },
+        { "title": "Song Two", "file": "Somebody-Like-U.mp3" }
+    ]
 }

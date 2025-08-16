@@ -1,0 +1,38 @@
+[
+    {
+        "folder": "ncs",
+        "title": "NCS Hits",
+        "description": "Best copyright-free music by NCS",
+        "cover": "songs/ncs/cover.jpg"
+    },
+    {
+        "folder": "honey singh",
+        "title": "Rock Legends",
+        "description": "Classic rock anthems",
+        "cover": "songs/rock/cover.jpg"
+    },
+    {
+        "folder": "Diljeet Dosanj",
+        "title": "Punjabi singer",
+        "description": "Party songs",
+        "cover": "songs/rock/cover.jpg"
+    },
+    {
+        "folder": "cs",
+        "title": "CS Hits",
+        "description": "Classic rock anthems",
+        "cover": "songs/rock/cover.jpg"
+    },
+    {
+        "folder": "Arijit Singh",
+        "title": "Indian top singer",
+        "description": "Classic rock anthems",
+        "cover": "songs/rock/cover.jpg"
+    },
+    {
+        "folder": "Alan walker",
+        "title": "Best DJ",
+        "description": "Classic rock anthems",
+        "cover": "songs/rock/cover.jpg"
+    }
+]

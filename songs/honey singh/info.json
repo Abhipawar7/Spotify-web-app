@@ -1,4 +1,11 @@
 {
-    "title" : "Honey Singh",
-    "description" : "ALBUM"
+    "title": "Honey Singh",
+    "description": "Best copyright-free music by Honey Singh",
+    "cover": "cover.jpg",
+    "tracks": [
+        { "title": "Song One", "file": "Birthday_Bash_.mp3" },
+        { "title": "Song Two", "file": "Blue-Eyes_.mp3" },
+        { "title": "Song Two", "file": "Desi Kalakaar - Honey Singh.mp3" },
+        { "title": "Song Two", "file": "I M Your Dj Tonight - Honey Singh.mp3" }
+    ]
 }
