@@ -3,11 +3,11 @@
     "description": "copyright songs",
     "cover": "cover.jpg",
     "tracks": [
-        { "title": "Song One", "file": "7 Years-(Pagallworld).mp3" },
-        { "title": "Song Two", "file": "Attention Charlie Puth-(HindiSongs.Com.IN).mp3" },
-        { "title": "Song Two", "file": "Close-Your-Eyes(Pagalworld).mp3" },
-        { "title": "Song Two", "file": "Faded(PaglaSongs).mp3" },
-        { "title": "Song Two", "file": "Stay(PaglaSongs).mp3" },
-        { "title": "Song Two", "file": "Sunflower-(Spider-Man_.mp3" }
+        { "title": "7 Years", "file": "7 Years-(Pagallworld).mp3" },
+        { "title": "Attention Charlie ", "file": "Attention Charlie Puth-(HindiSongs.Com.IN).mp3" },
+        { "title": " Close-Your-Eyes", "file": "Close-Your-Eyes(Pagalworld).mp3" },
+        { "title": "Faded", "file": "Faded(PaglaSongs).mp3" },
+        { "title": "stay", "file": "Stay(PaglaSongs).mp3" },
+        { "title": "Sunflower", "file": "Sunflower-(Spider-Man_.mp3" }
     ]
 }

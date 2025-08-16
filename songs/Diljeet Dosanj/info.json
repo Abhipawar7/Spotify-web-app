@@ -3,10 +3,10 @@
     "description": "Best copyright-free music by Diljeet Dosanj",
     "cover": "cover.jpg",
     "tracks": [
-        { "title": "Song One", "file": "_G.O.A.T..mp3" },
-        { "title": "Song Two", "file": "Born-To-Shine.mp3" },
-        { "title": "Song Two", "file": "new_320_Ranjhna.mp3" },
-        { "title": "Song Two", "file": "Proper_Patola_-.mp3" },
-        { "title": "Song Two", "file": "SURMA.mp3" }
+        { "title": "G.O.A.T.", "file": "_G.O.A.T..mp3" },
+        { "title": "Born-To-Shine", "file": "Born-To-Shine.mp3" },
+        { "title": "Ranjhna", "file": "new_320_Ranjhna.mp3" },
+        { "title": "Proper_Patola", "file": "Proper_Patola_-.mp3" },
+        { "title": "SURMA", "file": "SURMA.mp3" }
     ]
 }

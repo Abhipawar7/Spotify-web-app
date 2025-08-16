@@ -3,9 +3,9 @@
     "description": "Best copyright-free music by Arijit singh",
     "cover": "cover.jpg",
     "tracks": [
-        { "title": "Song One", "file": "- Bas Tu Hai.mp3" },
-        { "title": "Song Two", "file": "- Taarefon Se.mp3" },
-        { "title": "Song Two", "file": "Ae-Dil-Hai-Mushkil-.mp3" },
-        { "title": "Song Two", "file": "Heeriye_.mp3" }
+        { "title": "Bas Tu Hai", "file": "- Bas Tu Hai.mp3" },
+        { "title": "Taarefon Se", "file": "- Taarefon Se.mp3" },
+        { "title": "Ae-Dil-Hai-Mushkil", "file": "Ae-Dil-Hai-Mushkil-.mp3" },
+        { "title": "Heeriye", "file": "Heeriye_.mp3" }
     ]
 }

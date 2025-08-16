@@ -3,9 +3,9 @@
     "description": "Best copyright-free music by Alan Walker",
     "cover": "cover.jpg",
     "tracks": [
-        { "title": "Song One", "file": "Darkside.mp3" },
-        { "title": "Song Two", "file": "Diamond-Heart_.mp3" },
-        { "title": "Song Two", "file": "Faded_320.mp3" },
-        { "title": "Song Two", "file": "Somebody-Like-U.mp3" }
+        { "title": "Darkside", "file": "Darkside.mp3" },
+        { "title": "Diamond-Heart", "file": "Diamond-Heart_.mp3" },
+        { "title": "Faded_320", "file": "Faded_320.mp3" },
+        { "title": "Somebody-Like-U", "file": "Somebody-Like-U.mp3" }
     ]
 }

@@ -9,30 +9,30 @@
         "folder": "honey singh",
         "title": "Rock Legends",
         "description": "Classic rock anthems",
-        "cover": "songs/rock/cover.jpg"
+        "cover": "songs/honey Singh/cover.jpg"
     },
     {
         "folder": "Diljeet Dosanj",
         "title": "Punjabi singer",
         "description": "Party songs",
-        "cover": "songs/rock/cover.jpg"
+        "cover": "songs/Diljeet Dosanj/cover.jpg"
     },
     {
         "folder": "cs",
         "title": "CS Hits",
         "description": "Classic rock anthems",
-        "cover": "songs/rock/cover.jpg"
+        "cover": "songs/cs/cover.jpg"
     },
     {
         "folder": "Arijit Singh",
         "title": "Indian top singer",
         "description": "Classic rock anthems",
-        "cover": "songs/rock/cover.jpg"
+        "cover": "songs/Arijit Singh/cover.jpg"
     },
     {
         "folder": "Alan walker",
         "title": "Best DJ",
         "description": "Classic rock anthems",
-        "cover": "songs/rock/cover.jpg"
+        "cover": "songs/Alan walker/cover.jpg"
     }
 ]

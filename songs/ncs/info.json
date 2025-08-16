@@ -3,9 +3,9 @@
     "description": "Best copyright-free music by NCS",
     "cover": "cover.jpg",
     "tracks": [
-        { "title": "Song One", "file": "BEKSY.-Stars in the sky [NCS Release].mp3" },
-        { "title": "Song One", "file": "Egzod-Royalty.mp3" },
-        { "title": "Song One", "file": "Netrum - Always Be[NCS Release].mp3" },
-        { "title": "Song Two", "file": "Warriyo - Mortals.mp3" }
+        { "title": "Stars in the sky ", "file": "BEKSY.-Stars in the sky [NCS Release].mp3" },
+        { "title": "Royalty", "file": "Egzod-Royalty.mp3" },
+        { "title": "Always Be", "file": "Netrum - Always Be[NCS Release].mp3" },
+        { "title": " Mortals", "file": "Warriyo - Mortals.mp3" }
     ]
 }
