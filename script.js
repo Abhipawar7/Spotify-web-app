@@ -94,7 +94,7 @@ async function displayAlbums() {
     // div.innerHTML = response;
     // let anchors = div.getElementsByTagName("a")             //get all a tags from response
     let cardContainer = document.querySelector(".card-container");
-     albums.forEach(album => {
+    albums.forEach(album => {
         cardContainer.innerHTML += `
         <div data-folder="${album.folder}" class="card">
             <div class="play">
@@ -135,13 +135,20 @@ async function displayAlbums() {
     //     // console.log("albums displayed")
     // }
     //adding click functionality to each card 
-    Array.from(document.getElementsByClassName("card")).forEach(e => {
-        e.addEventListener("click", async item => {
-            console.log("fetching songs")                  // debug log
-            songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  //fetch songs from clicked album
-            playMusic(songs[0])
-        })
-    })
+    document.querySelectorAll(".card").forEach(card => {
+        card.addEventListener("click", async () => {
+            await getSongs(`songs/${card.dataset.folder}`);
+            playMusic(songs[0].file);
+        });
+
+    });
+    //     Array.from(document.getElementsByClassName("card")).forEach(e => {
+    //         e.addEventListener("click", async item => {
+    //             console.log("fetching songs")                  // debug log
+    //             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  //fetch songs from clicked album
+    //             playMusic(songs[0])
+    //         })
+    //     })
 }
 
 async function main() {
